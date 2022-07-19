@@ -18,7 +18,7 @@ The outputted json file has the following name/value pairs:
 
 The following are use if the last report a service made is available. The last report contains information about where a service is currently located (e.g. between two stations or departing a station)
 
-- `last_report_label` 
+- `last_report_label` - Text label for the last report (usually "Last report:")
 - `last_report_status` - Status of the train (e.g. Departing, Between)
 - `last_report_station` - The station the report is linked to
 - `last_report_time` - The time the report happened. 
