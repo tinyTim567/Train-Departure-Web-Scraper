@@ -44,7 +44,6 @@ def get_train_times():
 
         departure["header"] = calling_points[0]
         calling_points.pop(0)
-        departure["stops"] = calling_points
 
         # Gets cancellation reason
         try:
@@ -54,10 +53,42 @@ def get_train_times():
 
         # Gets late reason
         try:
-            departure["late_reason"] = (c.find("div", class_="late_reason")).text
+            departure["late_reason"] = (c.find("span", class_="late_reason")).text
+            calling_points.remove((c.find("span", class_="late_reason")).text)
         except AttributeError:
             ()
 
+        # Gets last report
+        try:
+            departure["last_report_label"] = (c.find("span", class_="LastReportLabel")).text
+            calling_points.remove((c.find("span", class_="LastReportLabel")).text)
+        except AttributeError:
+            ()
+        try:
+            departure["last_report_status"] = (c.find("span", class_="LastReportStatus")).text
+            calling_points.remove((c.find("span", class_="LastReportStatus")).text)
+        except AttributeError:
+            ()
+        try:
+            departure["last_report_station"] = (c.find("span", class_="LastReportStation")).text
+            calling_points.remove((c.find("span", class_="LastReportStation")).text)
+        except AttributeError:
+            ()
+        try:
+            departure["last_report_time"] = (c.find("span", class_="LastReportTime")).text
+            calling_points.remove((c.find("span", class_="LastReportTime")).text)
+        except AttributeError:
+            ()
+
+        # Gets not calling list
+
+        try:
+            departure["not_calling_list"] = (c.find("span", class_="not_calling_list")).text
+            calling_points.remove((c.find("span", class_="not_calling_list")).text)
+        except AttributeError:
+            ()
+
+        departure["stops"] = calling_points
         station_departures.append(departure)
         i = i + 1
 
