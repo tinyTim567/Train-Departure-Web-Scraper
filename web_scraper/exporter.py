@@ -1,13 +1,15 @@
-import scraper
+from web_scraper import scraper
 import json
 
-train_times = scraper.get_train_times("HUL")
 
-filename = "exported_times.json"
-with open(filename, "w") as f:
-    json.dump(train_times, f)
+def main(station):
+    train_times = scraper.get_train_times(station)
 
-print("Done")
+    filename = "exported_times.json"
+    with open(filename, "w") as f:
+        json.dump(train_times, f)
 
-# with open(filename) as f:
-#     imported_times = json.load(f)
+    print("Done")
+
+    # with open(filename) as f:
+    #     imported_times = json.load(f)

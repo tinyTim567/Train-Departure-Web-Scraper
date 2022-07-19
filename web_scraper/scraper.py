@@ -91,13 +91,3 @@ def get_train_times(station_code):
         i = i + 1
 
     return station_departures
-
-
-def main():
-    train_times = get_train_times("ABC")
-    print(train_times)
-
-    i = 1
-    for time in train_times:
-        print(str(i) + ". " + str(time))
-        i = i + 1

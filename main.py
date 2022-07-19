@@ -1,4 +1,5 @@
-from web_scraper import scraper
+from web_scraper import exporter
 
 if __name__ == '__main__':
-    scraper.main()
+    station = "NCL"
+    exporter.main(station)
