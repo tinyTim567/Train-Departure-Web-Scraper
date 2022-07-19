@@ -45,7 +45,7 @@ def get_train_times(station_code):
 
         # Gets cancellation reason
         try:
-            departure["cancelled_reason"] = (c.find("div", class_="canc_reason")).text
+            departure["cancellation_reason"] = (c.find("div", class_="canc_reason")).text
         except AttributeError:
             ()
 
@@ -86,7 +86,7 @@ def get_train_times(station_code):
         except AttributeError:
             ()
 
-        departure["stops"] = calling_points
+        departure["calling_points"] = calling_points
         station_departures.append(departure)
         i = i + 1
 
