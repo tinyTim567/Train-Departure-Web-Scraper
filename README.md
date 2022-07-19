@@ -1,10 +1,10 @@
 # Train Departure Web Scraper
-This repository is used for getting live departure information from national rail and exporting it to a json file. 
+This repository is for getting live departure information for UK train stations and exporting it to a json file. Live data is scrapped from the [National Rail live departures pages](https://realtime.nationalrail.co.uk/ldbcis/departures.aspx?u=039B1CD1-14D4-4CB9-83B1-A84CC3AEDF83&crs=NCL&H=1080). 
 
 ## How to use
 To export departure information, run `main.py`. The outputted departures are stored in `exported_times.json`. 
 
-The station can be change by changing the station variable to be the station code of the desired station. Station codes can be found at: https://www.nationalrail.co.uk/stations_destinations/48541.aspx
+The station can be change by changing the `station` variable to be the station code of the desired station. Station codes can be found at: https://www.nationalrail.co.uk/stations_destinations/48541.aspx
 
 ### JSON values
 The outputted json file has the following name/value pairs: 
