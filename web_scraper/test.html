@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="refresh" content="120">
+    <title>Hull</title>
+    <script type="text/javascript" src="Hull_files/Scroller.js"></script>
+    <link href="Hull_files/H1024SWT.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body onload="Scroller();" data-new-gr-c-s-check-loaded="8.900.0" data-gr-ext-installed="">
+    <div class="wrapper1">
+        <div class="wrapper2">
+
+            <div class="heading" id="stationHeader">
+                <table id="tableHeader" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td class="col1">
+                            </td>
+                            <td class="col2" id="colHeaderText">
+                                Hull
+                            </td>
+                            <td class="col3">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="contents" id="trainServices">
+
+                <table class="depboard" id="depboardTable" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr id="depboardHeader">
+                            <th>Destination</th>
+                            <th class="centre_col plat_col">Plat.</th>
+                            <th class="centre_col sched_col">Departs</th>
+                            <th class="centre_col exp_col">Expected</th>
+
+                        </tr>
+
+                        <tr id="trainStation0" class="altrow">
+                            <td class="no_border">York</td>
+                            <td class="centre_col no_border platform">4</td>
+                            <td class="centre_col no_border">1250</td>
+                            <td class="centre_col no_border on_time">On Time</td>
+
+                        </tr>
+
+                        <tr id="callingPoints0" class="altrow">
+                            <td class="calling_list" colspan="4">
+                                <div id="scroll0" class="scrollable">
+
+
+
+                                    <span class="cp_header">Calling at:</span>
+
+
+                                    <span>Brough</span>
+                                    <span>(1301), </span>
+
+                                    <span>Gilberdyke</span>
+                                    <span>(1309), </span>
+
+                                    <span>Howden</span>
+                                    <span>(1316), </span>
+
+                                    <span>Wressle</span>
+                                    <span>(1321), </span>
+
+                                    <span>Selby</span>
+                                    <span>(1329), </span>
+
+                                    <span>Sherburn-in-Elmet</span>
+                                    <span>(1341), </span>
+
+                                    <span>Church Fenton</span>
+                                    <span>(1345), </span>
+
+                                    <span class="cp_dest">York</span>
+                                    <span class="cp_dest">(1400)</span>
+
+
+
+
+
+
+
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <tr id="trainStation1" class="cancelled">
+                            <td class="no_border">Manchester Piccadilly</td>
+                            <td class="centre_col no_border platform">
+                            </td>
+                            <td class="centre_col no_border">1308</td>
+                            <td class="centre_col no_border cancelled">Cancelled</td>
+
+                        </tr>
+
+                        <tr id="callingPoints1" class="cancelled">
+                            <td class="calling_list" colspan="4">
+                                <div id="scroll1" class="scrollable">
+
+                                    <div class="canc_reason">This train has been cancelled because of forecasted severe
+                                        weather</div>
+
+
+                                    <span class="cp_header">This was the train calling at:</span>
+
+                                    <span>Brough, </span>
+
+
+                                    <span>Selby, </span>
+
+
+                                    <span>Leeds, </span>
+
+
+                                    <span>Huddersfield, </span>
+
+
+                                    <span>Stalybridge, </span>
+
+
+                                    <span class="cp_dest">Manchester Piccadilly</span>
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <tr id="trainStation2" class="altrow cancelled">
+                            <td class="no_border">Scarborough</td>
+                            <td class="centre_col no_border platform">
+                            </td>
+                            <td class="centre_col no_border">1321</td>
+                            <td class="centre_col no_border cancelled">Cancelled</td>
+
+                        </tr>
+
+                        <tr id="callingPoints2" class="altrow cancelled">
+                            <td class="calling_list" colspan="4">
+                                <div id="scroll2" class="scrollable">
+
+                                    <div class="canc_reason">This train has been cancelled because of forecasted severe
+                                        weather</div>
+
+
+                                    <span class="cp_header">This was the train calling at:</span>
+
+                                    <span>Cottingham, </span>
+
+
+                                    <span>Beverley, </span>
+
+
+                                    <span>Driffield, </span>
+
+
+                                    <span>Bridlington, </span>
+
+
+                                    <span>Bempton, </span>
+
+
+                                    <span>Hunmanby, </span>
+
+
+                                    <span>Filey, </span>
+
+
+                                    <span>Seamer, </span>
+
+
+                                    <span class="cp_dest">Scarborough</span>
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <tr id="trainStation3" class="cancelled">
+                            <td class="no_border">Sheffield</td>
+                            <td class="centre_col no_border platform">
+                            </td>
+                            <td class="centre_col no_border">1325</td>
+                            <td class="centre_col no_border cancelled">Cancelled</td>
+
+                        </tr>
+
+                        <tr id="callingPoints3" class="cancelled">
+                            <td class="calling_list" colspan="4">
+                                <div id="scroll3" class="scrollable">
+
+                                    <div class="canc_reason">This train has been cancelled because of forecasted severe
+                                        weather</div>
+
+
+                                    <span class="cp_header">This was the train calling at:</span>
+
+                                    <span>Brough, </span>
+
+
+                                    <span>Goole, </span>
+
+
+                                    <span>Doncaster, </span>
+
+
+                                    <span>Meadowhall, </span>
+
+
+                                    <span class="cp_dest">Sheffield</span>
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <tr id="trainStation4" class="altrow">
+                            <td class="no_border">York</td>
+                            <td class="centre_col no_border platform">3</td>
+                            <td class="centre_col no_border">1346</td>
+                            <td class="centre_col no_border on_time">On Time</td>
+
+                        </tr>
+
+                        <tr id="callingPoints4" class="altrow">
+                            <td class="calling_list" colspan="4">
+                                <div id="scroll4" class="scrollable">
+
+
+
+                                    <span class="cp_header">Calling at:</span>
+
+
+                                    <span>Brough</span>
+                                    <span>(1357), </span>
+
+                                    <span>Gilberdyke</span>
+                                    <span>(1405), </span>
+
+                                    <span>Howden</span>
+                                    <span>(1412), </span>
+
+                                    <span>Selby</span>
+                                    <span>(1423), </span>
+
+                                    <span class="cp_dest">York</span>
+                                    <span class="cp_dest">(1444)</span>
+
+
+
+
+
+
+
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <tr id="trainStation5" class="cancelled">
+                            <td class="no_border">Doncaster</td>
+                            <td class="centre_col no_border platform">
+                            </td>
+                            <td class="centre_col no_border">1353</td>
+                            <td class="centre_col no_border cancelled">Cancelled</td>
+
+                        </tr>
+
+                        <tr id="callingPoints5" class="cancelled">
+                            <td class="calling_list" colspan="4">
+                                <div id="scroll5" class="scrollable">
+
+                                    <div class="canc_reason">This train has been cancelled because of severe weather
+                                    </div>
+
+
+                                    <span class="cp_header">This was the train calling at:</span>
+
+                                    <span>Hessle, </span>
+
+
+                                    <span>Ferriby, </span>
+
+
+                                    <span>Brough, </span>
+
+
+                                    <span>Broomfleet, </span>
+
+
+                                    <span>Gilberdyke, </span>
+
+
+                                    <span>Goole, </span>
+
+
+                                    <span>Thorne North, </span>
+
+
+                                    <span>Hatfield &amp; Stainforth, </span>
+
+
+                                    <span>Kirk Sandall, </span>
+
+
+                                    <span class="cp_dest">Doncaster</span>
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <tr id="trainStation6" class="altrow cancelled">
+                            <td class="no_border">Manchester Piccadilly</td>
+                            <td class="centre_col no_border platform">
+                            </td>
+                            <td class="centre_col no_border">1407</td>
+                            <td class="centre_col no_border cancelled">Cancelled</td>
+
+                        </tr>
+
+                        <tr id="callingPoints6" class="altrow cancelled">
+                            <td class="calling_list" colspan="4">
+                                <div id="scroll6" class="scrollable">
+
+                                    <div class="canc_reason">This train has been cancelled because of forecasted severe
+                                        weather</div>
+
+
+                                    <span class="cp_header">This was the train calling at:</span>
+
+                                    <span>Brough, </span>
+
+
+                                    <span>Selby, </span>
+
+
+                                    <span>Leeds, </span>
+
+
+                                    <span>Huddersfield, </span>
+
+
+                                    <span>Stalybridge, </span>
+
+
+                                    <span class="cp_dest">Manchester Piccadilly</span>
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+
+
+            </div>
+
+            <div class="page_number">Page 1 of 2</div>
+
+            <div class="update_time">Last updated: 1249</div>
+
+
+            <div class="logo1"> </div>
+
+            <div class="logo2"> </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
