@@ -3,16 +3,14 @@ import requests
 import re
 
 
-def get_web_page():
-    url = "https://realtime.nationalrail.co.uk/ldbcis/departures.aspx?u=039B1CD1-14D4-4CB9-83B1-A84CC3AEDF83&crs=HUL&H=1080"
-
+def get_web_page(url):
     result = requests.get(url)
     return BeautifulSoup(result.text, "html.parser")
 
 
-def get_train_times():
-    soup = get_web_page()
-    print(soup.prettify())
+def get_train_times(station_code):
+    url = "https://realtime.nationalrail.co.uk/ldbcis/departures.aspx?u=039B1CD1-14D4-4CB9-83B1-A84CC3AEDF83&crs=" + station_code + "&H=1080"
+    soup = get_web_page(url)
 
     s = soup.find("div", class_="contents")
     departures = s.find_all("tr", id=re.compile("trainStation.*"))
@@ -96,4 +94,10 @@ def get_train_times():
 
 
 def main():
-    print(get_train_times())
+    train_times = get_train_times("ABC")
+    print(train_times)
+
+    i = 1
+    for time in train_times:
+        print(str(i) + ". " + str(time))
+        i = i + 1
