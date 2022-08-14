@@ -86,6 +86,14 @@ def get_train_times(station_code):
         except AttributeError:
             ()
 
+            # Checks for information about coaches and removes it from calling points
+        try:
+            c.find("span", class_="form_header")
+            calling_points.pop()
+            calling_points.pop()
+        except AttributeError:
+            ()
+
         departure["calling_points"] = calling_points
         station_departures.append(departure)
         i = i + 1
